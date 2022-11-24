@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Name</th>
+            <th>Program</th>
+            <th>GPA</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each studentsData}}
+            <tr>
+                <td>{{studId}}</td>
+                <td>{{name}}</td>
+                <td>{{program}}</td>
+                <td>{{gpa}}</td>
+            </tr>
+        {{else}}
+            <tr><td><strong>{{message}}</strong></td></tr>
+        {{/each}}
+    </tbody>
+</table>
